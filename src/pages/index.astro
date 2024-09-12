@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/baseLayout.astro';
+const PageTital = "Welcome";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio-sundram</title>
+    <style>
+      h1, p{
+        font-weight: bold;
+        color: hsl(90, 41%, 35%);
+      }
+    </style>
+  </head>
+  <body>
+  <BaseLayout PageTital={PageTital}>
+    <h1>Hello!</h1> 
+    <p>
+       I'm a university student majoring in data science,
+       with a strong passion for technology and a drive to explore and learn.
+    </p>
+    <br>
+     <p> Here, I will share my daily progress, projects, and insights into what I learn each day.</p>
+	</BaseLayout>
+
+  </body>
+</html>

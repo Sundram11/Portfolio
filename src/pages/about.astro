@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/baseLayout.astro';
+const PageTital = "About Me";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title>About-me</title>
+    <style>
+      p{
+        font-weight: bold;
+        color: hsl(83, 38%, 41%);
+      }
+    </style>
+  </head>
+  <body>
+    <BaseLayout PageTital={PageTital}>
+      <p>
+        I am currently a second-year student at JC Bose Science and Technology University,
+         pursuing a degree in Data Science. At present, I am focusing on web development and am committed to becoming a professional developer.
+      </p>
+    </BaseLayout>
+  </body>
+</html>

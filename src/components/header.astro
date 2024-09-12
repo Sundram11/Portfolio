@@ -1,0 +1,46 @@
+---
+import Navigation from "./navigation.astro";
+import myimage from '../assets/img7.png';
+ 
+---
+ 
+ 
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Jacques+Francois+Shadow&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+<style>
+  .name {
+  font-family: sans-serif;
+  font-weight:bold;
+  color: hsla(0, 79%, 40%, 0.795) ;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+ 
+
+</style>
+    <title>Astro</title>
+  </head>
+  <body>
+
+    <div class="flex justify-center text-center ">
+      <div>
+        <h1 class="name">SUNDRAM YADAV</h1>
+      <img src={myimage.src} width="250px" alt="image"/>
+      </div>
+    </div>
+    <Navigation/>
+    
+ 
+   
+ 
+  </body>
+</html>
+
+
