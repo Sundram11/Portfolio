@@ -7,7 +7,7 @@ const { PageTital } = Astro.props;
 ---
 
 <style>
-  body {
+  .layout {
     background-color: #DCD9D4;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
     background-blend-mode: soft-light,screen;
@@ -30,22 +30,15 @@ const { PageTital } = Astro.props;
     <title>Portfolio-sundram</title>
   </head>
   <body>
-    <div class="m-0 p-o md:w-1/2 my-10">
-      <div>
-        <Header/>
-        <div class="mx-2">
-          <h2 class="pageTital ">{PageTital}</h2>
-          <hr class="bg-black h-1"> 
-        </div>
-         
-        <div class="my-6 mx-2">
-          <slot/>
-        </div> 
-        <Footer/>
-      </div>
+    <div class="layout">
+      <div class="m-0 p-o flex-col w-full overflow-scroll md:w-1/2 my-10">
+          <Header/>
+          <div class="mx-2">
+            <h2 class="pageTital ">{PageTital}</h2>
+            <hr class="bg-black h-1"> 
+            <slot/>
+          <Footer/>
+     </div>
     </div>
-   
- 
- 
   </body>
 </html>
