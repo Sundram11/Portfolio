@@ -6,5 +6,5 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   site : 'https://Sundram11.github.io',
-  base : 'Portfolio',
+  // base : 'Portfolio',
 });
