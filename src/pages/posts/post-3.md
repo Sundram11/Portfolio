@@ -1,10 +1,11 @@
 ---
+layout: ../../layouts/baseLayout.astro
 title: 'Day-3'
 pubDate: 2022-07-01
 description: "Its a daily report" 
 author: 'Sundram yadav'
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
+    # url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
